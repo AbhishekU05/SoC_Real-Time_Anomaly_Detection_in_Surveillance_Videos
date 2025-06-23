@@ -1,0 +1,1 @@
+# SoC_Real-Time_Anomaly_Detection_in_Surveillance_Videos
