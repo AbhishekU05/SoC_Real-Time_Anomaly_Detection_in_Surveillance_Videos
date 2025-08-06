@@ -1,6 +1,6 @@
 # Real-Time Anomaly Detection in Surveillance Videos
 
-In this SoC, I have learnt how to use YOLOv5 for object detection and object tracking. The .ipynb file in the repo contains the week 3 assignment in which I have used YOLOv5 to detect pedestrians in a video. The implementation uses the MOT17 dataset.
+In this SoC, I have learnt how to use YOLOv5 for object detection and object tracking. I have used YOLOv5 to detect pedestrians in a video. The training uses the MOT17 dataset.
 
 The MOT17 dataset is a benchmark dataset used in the Multiple Object Tracking (MOT) research community. It is part of the MOTChallenge, which provides a standard for evaluating and comparing tracking algorithms.
 
@@ -24,3 +24,6 @@ In the implementation, I have used 2 models, YOLOv5s and YOLOv5m. I have also fr
 
 - YOLOv5m outperforms YOLOv5s on all metrics, as expected due to its larger capacity.
 - Freezing layers in YOLOv5m leads to the best overall results, especially in Recall and mAP, suggesting better transfer learning from pretrained weights on the MOT dataset.
+
+### Implementation Highlights
+The YOLOv5m with the first 15 layers frozen was selected to implement the anomaly detection algorithm. The dataset used was the Avenue dataset. The notebook used to train the model is [here](./Model_training.ipynb) and the notebook used to test the model is [here](./Model_testing.ipynb). A sample video containing the result of the testing has also been provided [here](./Detection_video.mp4).
